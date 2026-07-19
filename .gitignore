@@ -1,1 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+*.pem
+*.key
+*.pkcs12
+*.keystore
+
+# Tooling
 .idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
