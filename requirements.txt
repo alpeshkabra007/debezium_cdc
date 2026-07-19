@@ -1,0 +1,11 @@
+# Runtime + tooling dependencies for the CDC helper tools under tools/.
+#
+# NOTE: pyodbc requires system-level ODBC drivers (e.g. unixODBC and the
+# Microsoft ODBC Driver for SQL Server). It is imported lazily inside
+# tools/verify_replication.py, so the modules import and the unit tests run
+# even when pyodbc is not installed.
+
+requests>=2.28
+pymysql>=1.0
+pyodbc>=4.0
+pytest>=7.0
